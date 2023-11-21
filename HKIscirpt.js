@@ -1,4 +1,4 @@
-<script>
+
   //Chart.register(ChartDataLabels);
   Chart.defaults.font.family = "Satoshi";
   Chart.defaults.font.size = 14;
@@ -216,4 +216,3 @@ quillnoteblock.on('text-change', function(delta, oldDelta, source) { document.qu
       el: '.swiper-scrollbar',
     },
   });
-</script>
