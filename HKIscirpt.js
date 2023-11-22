@@ -218,7 +218,7 @@ var quillforumblock = new Quill('#forumblock', {
                 ['clean']]},
     theme: 'snow'
   });
-quillforumblock.on('text-change', function() { document.querySelector('#editorTextareaForum').innerHTML = quillforumblock.root.innerHMTL; 
+quillforumblock.on('text-change', function() { document.querySelector('#editorTextareaForum').innerHTML = quillforumblock.root.innerHTML; 
  document.querySelector('#editorTextareaForum').dispatchEvent(new Event('change')); 
  });
   const swiper = new Swiper('.swiper' ,  {
