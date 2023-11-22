@@ -207,6 +207,17 @@ src: video});
 quillnoteblock.on('text-change', function(delta, oldDelta, source) { document.querySelector('#editorTextareaTopic').innerHTML =JSON.stringify(quillnoteblock.getContents()); 
  document.querySelector('#editorTextareaTopic').dispatchEvent(new Event('change')); 
  });
+var quillforumblock = new Quill('forumblock', {
+   modules: {
+      toolbar: [['bold', 'italic', 'underline'],
+                [{ 'list': 'ordered'}, { 'list': 'bullet' }],                        
+                [{ 'header': [1, 2, 3, false] }],
+                [{ 'color': [] }, { 'background': [] }],       
+                [{ 'font': [] }],
+                [{ 'align': [] }],
+                ['clean']]},
+    theme: 'snow'
+  });
   const swiper = new Swiper('.swiper' ,  {
     navigation: {
       nextEl: '.swiper-button-next',
