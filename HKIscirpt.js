@@ -218,6 +218,9 @@ var quillforumblock = new Quill('#forumblock', {
                 ['clean']]},
     theme: 'snow'
   });
+quillforumblock.on('text-change', function(delta, oldDelta, source) { document.querySelector('#editorTextareaForum').innerHTML = quillformblock.root.innerHMTL); 
+ document.querySelector('#editorTextareaForum').dispatchEvent(new Event('change')); 
+ });
   const swiper = new Swiper('.swiper' ,  {
     navigation: {
       nextEl: '.swiper-button-next',
