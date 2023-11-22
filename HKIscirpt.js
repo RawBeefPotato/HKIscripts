@@ -221,8 +221,8 @@ var quillforumblock = new Quill('#forumblock', {
 quillforumblock.on('text-change', function() { document.querySelector('#editorTextareaForum').innerHTML = quillforumblock.root.innerHTML; 
  document.querySelector('#editorTextareaForum').dispatchEvent(new Event('change')); 
  });
-var quillnoteblockmobile =  new Quill('noteblockmobile', {
-   modules: {
+var quillnoteblockmobile = new Quill('#noteblockmobile', {
+    modules: {
       toolbar: [['bold', 'italic', 'underline'],
                 [{ 'list': 'ordered'}, { 'list': 'bullet' }],                        
                 [{ 'header': [1, 2, 3, false] }],
@@ -232,12 +232,12 @@ var quillnoteblockmobile =  new Quill('noteblockmobile', {
                 ['clean']]},
     theme: 'snow'
   });
- async function exportPDFmobile(){
+  async function exportPDFmobile(){
     const delta = quillnoteblockmobile.getContents();
     const blob = await QuillToPdf.pdfExporter.generatePdf(delta);
     saveAs(blob, "HKI-Notiz.pdf")
   };
-  $('#exportPDF').click(exportPDFmobile);
+  $('#exportPDFmobile').click(exportPDFmobile);
   $('#clearnotebookmobile').click(function clearnotebook(){quillnoteblockmobile.setContents([{ insert:'\n'}]);})
 quillnoteblockmobile.on('text-change', function(delta, oldDelta, source) { document.querySelector('#editorTextareaTopicMobile').innerHTML =JSON.stringify(quillnoteblockmobile.getContents()); 
  document.querySelector('#editorTextareaTopicMobile').dispatchEvent(new Event('change')); 
