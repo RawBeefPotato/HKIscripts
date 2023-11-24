@@ -30,7 +30,7 @@
             }
                },*/
       scales: {
-        yAxes: [{
+        y: [{
             ticks: {
                 mirror: true
             }
