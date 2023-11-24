@@ -30,11 +30,11 @@
             }
                },*/
       scales: {
-        y: [{
+        /*y: [{
             ticks: {
                 mirror: true
             }
-        }],
+        }],*/
         x: {
           max: 100,
           beginAtZero: true,
