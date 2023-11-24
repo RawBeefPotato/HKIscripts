@@ -19,7 +19,7 @@
     },
     options: {
       indexAxis: 'y',
-      plugins: { datalabels: {
+      /*plugins: { datalabels: {
         color: 'black',
         anochor: 'end',
         align: 'center',
@@ -28,8 +28,13 @@
                 return context.chart.data.labels[context.dataIndex];
             }
             }
-               },
+               },*/
       scales: {
+        yAxes: [{
+            ticks: {
+                mirror: true
+            }
+        }]
         x: {
           max: 100,
           beginAtZero: true,
