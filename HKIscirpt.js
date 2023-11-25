@@ -20,7 +20,7 @@
     options: {
       indexAxis: 'y',
       plugins: 
-      { legend: {display: false},
+      { legend: {display: true},
         datalabels: {
         color: 'black',
         anchor: 'end',
@@ -32,11 +32,11 @@
             }
                },
       scales: {
-        /*y: [{
+        y: {
             ticks: {
-                mirror: true
+                display: false
             }
-        }],*/
+        };
         x: {
           max: 100,
           beginAtZero: true,
