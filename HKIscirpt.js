@@ -22,14 +22,14 @@
       plugins: { datalabels: {
         color: 'black',
         anchor: 'end',
-        align: 'end',
+        align: 'start',
         clamp: true,
         formatter: function(value, context) { // Show the label instead of the value
                 return context.chart.data.labels[context.dataIndex];
             }
-            }
+            },
+                legend: {display: false},
                },
-      legend: {display: false},
       scales: {
         /*y: [{
             ticks: {
