@@ -19,7 +19,9 @@
     },
     options: {
       indexAxis: 'y',
-      plugins: { datalabels: {
+      plugins: 
+      { legend: {display: false},
+        datalabels: {
         color: 'black',
         anchor: 'end',
         align: 'start',
@@ -27,8 +29,7 @@
         formatter: function(value, context) { // Show the label instead of the value
                 return context.chart.data.labels[context.dataIndex];
             }
-            },
-                legend: {display: false},
+            }
                },
       scales: {
         /*y: [{
