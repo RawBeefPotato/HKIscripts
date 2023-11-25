@@ -36,7 +36,7 @@
             ticks: {
                 display: false
             }
-        };
+        },
         x: {
           max: 100,
           beginAtZero: true,
