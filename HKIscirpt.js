@@ -1,5 +1,5 @@
 
-  //Chart.register(ChartDataLabels);
+  Chart.register(ChartDataLabels);
   Chart.defaults.font.family = "Satoshi";
   Chart.defaults.font.size = 14;
   Chart.defaults.font.weight = 'normal';
@@ -19,7 +19,7 @@
     },
     options: {
       indexAxis: 'y',
-      /*plugins: { datalabels: {
+      plugins: { datalabels: {
         color: 'black',
         anochor: 'end',
         align: 'center',
