@@ -28,7 +28,7 @@
                 return context.chart.data.labels[context.dataIndex];
             }
             }
-               },*/
+               },
       scales: {
         /*y: [{
             ticks: {
