@@ -21,9 +21,9 @@
       indexAxis: 'y',
       plugins: { datalabels: {
         color: 'black',
-        anochor: 'end',
+        anochor: 'center',
         align: 'center',
-        clamp: true,
+        clamp: false,
         formatter: function(value, context) { // Show the label instead of the value
                 return context.chart.data.labels[context.dataIndex];
             }
