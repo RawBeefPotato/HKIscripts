@@ -46,6 +46,10 @@
   });
   const topicvideoplayer = document.getElementById('tvplayer');
   window.addEventListener('DOMContentLoaded', (event) => { var topicvideoplayer =  videojs('tvplayer',{
+    html:{ vhs: {overrideNative:true},
+           nativeAudioTracks: false,
+    nativeVideoTracks: false
+  },
     autoplay: true,
     controls: true,
     aspectRatio: "16:9",
