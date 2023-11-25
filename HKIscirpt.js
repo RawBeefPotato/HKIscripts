@@ -21,7 +21,7 @@
       indexAxis: 'y',
       plugins: { datalabels: {
         color: 'black',
-        anochor: 'end',
+        anchor: 'end',
         align: 'center',
         clamp: false,
         formatter: function(value, context) { // Show the label instead of the value
