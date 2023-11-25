@@ -21,7 +21,7 @@
       indexAxis: 'y',
       plugins: { datalabels: {
         color: 'black',
-        anochor: 'center',
+        anochor: 'end',
         align: 'center',
         clamp: false,
         formatter: function(value, context) { // Show the label instead of the value
@@ -29,6 +29,8 @@
             }
             }
                },
+      legend: { labels: {display: false,
+                        }},
       scales: {
         /*y: [{
             ticks: {
