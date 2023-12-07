@@ -46,13 +46,12 @@
   });
   const topicvideoplayer = document.getElementById('tvplayer');
   window.addEventListener('DOMContentLoaded', (event) => { var topicvideoplayer =  videojs('tvplayer',{
-    html:{ vhs: {overrideNative:true},
+    html5:{ vhs: {overrideNative:true},
            nativeAudioTracks: false,
-    nativeVideoTracks: false
-  },
-    hls: { limitRenditionByPlayerDimensions: true,
+    nativeVideoTracks: false,
+            limitRenditionByPlayerDimensions: true,
    useDevicePixelRatio: true
-},
+  },
     controlBar: { skipButtons: { forward: 10,
                                 backward: 10 }
                 },
