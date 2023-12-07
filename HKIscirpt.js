@@ -50,6 +50,10 @@
            nativeAudioTracks: false,
     nativeVideoTracks: false
   },
+    plugins: {
+      seekButtons:{forward: 10,
+             back 10}
+    },
     autoplay: true,
     controls: true,
     aspectRatio: "16:9",
@@ -58,9 +62,6 @@
     
   });
   topicvideoplayer.qualitySelectorHls();
-  topicvideoplayer.seekButtons({ forward:10,
-                                back: 10
-                               });
                                                          });
   if (topicvideoplayer.addEventListener) {
     topicvideoplayer.addEventListener('contextmenu', function(e) {
