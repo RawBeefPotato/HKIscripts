@@ -54,9 +54,13 @@
     controls: true,
     aspectRatio: "16:9",
     preload: 'auto',
-    playbackRates:[1,1.5,2,2.5,3,3.5,4],
+    playbackRates:[1,1.25,1.5,2,2.5,3,3.5,4],
+    
   });
-                                                          topicvideoplayer.qualitySelectorHls();
+  topicvideoplayer.qualitySelectorHls();
+  topicvideoplayer.seekButtons({ forward:10,
+                                back: 10
+                               });
                                                          });
   if (topicvideoplayer.addEventListener) {
     topicvideoplayer.addEventListener('contextmenu', function(e) {
