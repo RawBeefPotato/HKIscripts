@@ -52,7 +52,7 @@
   },
     plugins: {
       seekButtons:{forward: 10,
-             back 10}
+             back: 10}
     },
     autoplay: true,
     controls: true,
