@@ -50,10 +50,9 @@
            nativeAudioTracks: false,
     nativeVideoTracks: false
   },
-    plugins: {
-      seekButtons:{forward: 10,
-             back: 10}
-    },
+    controlBar: { skipButtons: { forward: 10,
+                                backward: 10 }
+                },
     autoplay: true,
     controls: true,
     aspectRatio: "16:9",
