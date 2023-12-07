@@ -50,6 +50,9 @@
            nativeAudioTracks: false,
     nativeVideoTracks: false
   },
+    hls: { limitRenditionByPlayerDimensions: true,
+   useDevicePixelRatio: true
+},
     controlBar: { skipButtons: { forward: 10,
                                 backward: 10 }
                 },
